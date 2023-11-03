@@ -15,9 +15,11 @@ public class Main {
 		
 		stringLista = transformador(stringLista, aMayuscula);
 		
-		for (String string : stringLista) {
-			System.out.println(string);
-		}
+		stringLista.forEach(s -> System.out.println(s));
+		
+		stringLista.replaceAll(String::toLowerCase);
+		stringLista.forEach(s -> System.out.println(s));
+		
 		
 
 	}
