@@ -13,7 +13,9 @@ public class Main {
 		stringLista.add("chau");
 		EditaString aMayuscula = s -> s.toUpperCase(); 
 		
-		for (String string : transformador(stringLista, aMayuscula)) {
+		stringLista = transformador(stringLista, aMayuscula);
+		
+		for (String string : stringLista) {
 			System.out.println(string);
 		}
 		
